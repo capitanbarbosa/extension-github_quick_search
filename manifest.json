@@ -21,5 +21,13 @@
     "icons": {
       "16": "icon16.png",
       "48": "icon48.png"    }
+      ,
+      "content_scripts": [
+        {
+          "matches": ["https://github.com/*"],
+          "js": ["content.js"]
+        }
+      ]
+      
   }
   
