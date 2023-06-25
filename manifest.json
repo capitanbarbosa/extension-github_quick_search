@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "My GitHub Repo Search",
+    "version": "1.0",
+    "description": "Search your GitHub repositories directly from a shortcut inside browser.",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "commands": {
+      "searchRepos": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F"
+        },
+        "description": "Search GitHub Repositories"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png"    }
+  }
+  
