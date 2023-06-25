@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "My GitHub Repo Search",
+    "name": "GitHub Repo Search",
     "version": "1.0",
     "description": "Search your GitHub repositories directly from a shortcut inside browser.",
     "permissions": [
