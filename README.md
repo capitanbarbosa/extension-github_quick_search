@@ -9,6 +9,6 @@ A new tab will be opened, with a direct search on your repositories.
 to-do's
 
 - be able to toggle between 2 modes:
-  > open repos in new tab. (search on new tab)
-  > <br/>
-  > (search directly on popup), then open new tab.
+  > - open repos in new tab. (search on new tab)
+  >   <br>
+  > - (search directly on popup), then open new tab.
