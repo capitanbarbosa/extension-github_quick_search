@@ -1,4 +1,4 @@
-![icon48](https://github.com/capitanbarbosa/extension-github_quick_search/assets/65256527/ef0e9d84-3ea1-4482-bd50-328cd24edcde)
+![icon16](https://github.com/capitanbarbosa/extension-github_quick_search/assets/65256527/91440fcb-f13c-4791-883c-5045ca08cd3e)
 
 # Quickly access your Github repos
 
