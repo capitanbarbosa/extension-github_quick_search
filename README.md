@@ -1,3 +1,5 @@
+![icon48](https://github.com/capitanbarbosa/extension-github_quick_search/assets/65256527/ef0e9d84-3ea1-4482-bd50-328cd24edcde)
+
 # Quickly access your Github repos
 
 1. Assign your repo search URL,
