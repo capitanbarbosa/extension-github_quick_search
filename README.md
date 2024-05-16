@@ -7,3 +7,8 @@
 2. Press CTRL + SHIFT + F to access the your github repos search directly.
 
 A new tab will be opened, with a direct search on your github repos link.
+
+
+
+to-do:
+- [ ] add modal, input username. ahorita solo sirve con capitanbarbosa
