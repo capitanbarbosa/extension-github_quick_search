@@ -1,33 +1,39 @@
 {
-    "manifest_version": 2,
-    "name": "GitHub Repo Search",
-    "version": "1.0",
-    "description": "Search your GitHub repositories directly from a shortcut inside browser.",
-    "permissions": [
-      "activeTab"
-    ],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "commands": {
-      "searchRepos": {
-        "suggested_key": {
-          "default": "Ctrl+Shift+F"
-        },
-        "description": "Search GitHub Repositories"
-      }
-    },
-    "icons": {
+  "manifest_version": 2,
+  "name": "GitHub Repo Search",
+  "version": "1.1",
+  "description": "Search your GitHub repositories directly from a shortcut inside browser.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "searchRepos": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Search GitHub Repositories"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
       "16": "icon16.png",
-      "48": "icon48.png"    }
-      ,
-      "content_scripts": [
-        {
-          "matches": ["https://github.com/*"],
-          "js": ["content.js"]
-        }
-      ]
-      
+      "48": "icon48.png"
+    }
   }
-  
+}

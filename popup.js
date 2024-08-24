@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var searchInput = document.getElementById("searchInput");
-  searchInput.addEventListener("input", searchRepos);
+  var usernameInput = document.getElementById("usernameInput");
+  var saveButton = document.getElementById("saveButton");
 
-  function searchRepos() {
-    var searchTerm = searchInput.value.trim();
-    if (searchTerm.length > 0) {
-      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {
-          action: "searchRepos",
-          term: searchTerm,
-        });
+  // Load the saved username
+  chrome.storage.sync.get("githubUsername", function (data) {
+    if (data.githubUsername) {
+      usernameInput.value = data.githubUsername;
+    }
+  });
+
+  saveButton.addEventListener("click", function () {
+    var username = usernameInput.value.trim();
+    if (username) {
+      chrome.storage.sync.set({ githubUsername: username }, function () {
+        alert("Username saved!");
       });
     }
-  }
+  });
 });

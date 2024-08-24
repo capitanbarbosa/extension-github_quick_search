@@ -13,26 +13,16 @@
         padding: 8px;
         font-size: 14px;
       }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      li {
-        padding: 8px 0;
-        border-bottom: 1px solid #ccc;
-      }
-
-      a {
-        color: #0366d6;
-        text-decoration: none;
-      }
     </style>
     <script src="popup.js"></script>
   </head>
   <body>
-    <input type="text" id="searchInput" placeholder="Enter search term..." />
-    <ul id="resultsList"></ul>
+    <label for="usernameInput">GitHub username:</label>
+    <input
+      type="text"
+      id="usernameInput"
+      placeholder="Enter GitHub username..."
+    />
+    <button id="saveButton">Save</button>
   </body>
 </html>
